@@ -4,6 +4,7 @@
 
 #include "base/strings/string16.h"
 
+/* lee add 
 #if defined(WCHAR_T_IS_UTF16) && !defined(_AIX)
 
 #error This file should not be used on 2-byte wchar_t systems
@@ -85,3 +86,4 @@ template class std::
     basic_string<base::char16, base::string16_internals::string16_char_traits>;
 
 #endif  // WCHAR_T_IS_UTF32
+*/

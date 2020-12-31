@@ -530,7 +530,7 @@ static bool parse_skype_message_blob(const uint8_t *data, size_t size)
 int showUsage(const char *execPath)
 {
 	std::unique_ptr<char> pathCopy{strdup(execPath)};
-	const char *baseName = basename(pathCopy.get());
+	const char *baseName = "SkypeCacheViewer.exe";/*basename(pathCopy.get());*/
 	printf("Usage:\n"
 			"\t%s LEVELDB_PATH\n\n"
 			"For example:\n"

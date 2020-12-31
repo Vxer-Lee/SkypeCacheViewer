@@ -122,12 +122,14 @@ void PrepareForUTF8Output(const CHAR* src,
 }
 
 // Instantiate versions we know callers will need.
+
+/*lee add
 #if !defined(OS_WIN)
 // wchar_t and char16 are the same thing on Windows.
 template void PrepareForUTF8Output(const wchar_t*, size_t, std::string*);
 #endif
 template void PrepareForUTF8Output(const char16*, size_t, std::string*);
-
+*/
 template<typename STRING>
 void PrepareForUTF16Or32Output(const char* src,
                                size_t src_len,
@@ -146,10 +148,11 @@ void PrepareForUTF16Or32Output(const char* src,
 }
 
 // Instantiate versions we know callers will need.
+/*lee add
 #if !defined(OS_WIN)
 // std::wstring and string16 are the same thing on Windows.
 template void PrepareForUTF16Or32Output(const char*, size_t, std::wstring*);
 #endif
 template void PrepareForUTF16Or32Output(const char*, size_t, string16*);
-
+*/
 }  // namespace base
