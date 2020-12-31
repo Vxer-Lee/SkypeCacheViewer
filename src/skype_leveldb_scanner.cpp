@@ -20,7 +20,7 @@
 
 
 #define PRINT_DEBUG_DETAILS 0
-#define SHOW_MESSAGES 0
+#define SHOW_MESSAGES 1 //显示消息
 
 #if PRINT_DEBUG_DETAILS
 static void printSlice(const leveldb::Slice &slice)
